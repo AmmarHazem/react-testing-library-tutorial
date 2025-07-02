@@ -1,7 +1,11 @@
 import { type FC } from "react";
 
 const Button: FC<ButtonProps> = ({ count, setCount }) => {
-  return <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>;
+  return (
+    <button id="count-button" onClick={() => setCount((count) => count + 1)}>
+      count is {count}
+    </button>
+  );
 };
 
 interface ButtonProps {
